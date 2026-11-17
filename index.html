@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ДЕМО — Capital beauty, салон красоты на Аль-Фараби, Астана</title>
+  <meta name="description" content="Capital beauty: волосы, ногти, брови, ресницы, депиляция и макияж. Астана, Есиль, пр. Аль-Фараби, 11. Ежедневно 10:00–20:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <div class="top" id="top">
+    <p class="demo-bar">ДЕМО-ВЕРСИЯ · фото, цены и номер для записи заменим на ваши · Webstudio Astana</p>
+    <header class="header">
+      <div class="container header__in">
+        <a class="logo" href="#main" aria-label="Capital beauty, наверх">Capital beauty</a>
+        <nav class="nav" aria-label="Разделы">
+          <a href="#obraz">Образ</a>
+          <a href="#davines">Davines</a>
+          <a href="#otzyvy">Отзывы</a>
+          <a href="#adres">Адрес</a>
+        </nav>
+        <button class="btn btn--coral btn--sm js-book" type="button">Записаться</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="demo-ribbon" aria-hidden="true">ДЕМО</div>
+
+  <main id="main">
+    <!-- Первый экран: название как главный визуал + три арки -->
+    <section class="hero hero--wide">
+      <div class="container">
+        <div class="widecard">
+          <img src="img/stolik.jpg" width="1264" height="848" alt="Флаконы и расчёски на светлом каменном столике">
+          <div class="widecard__shade" aria-hidden="true"></div>
+          <div class="widecard__body">
+            <h1 class="hero__title">Capital beauty</h1>
+            <p class="hero__lead">Салон красоты в Есиле: волосы, ногти, брови, ресницы, депиляция и макияж.</p>
+            <div class="hero__btns">
+              <button class="btn btn--coral js-book" type="button">Записаться</button>
+              <a class="btn btn--ghost btn--onphoto" href="#obraz">Собрать образ</a>
+            </div>
+            <ul class="facts facts--photo">
+              <li>Ежедневно 10:00–20:00</li>
+              <li>пр. Аль-Фараби, 11</li>
+              <li><span class="star" aria-hidden="true">★</span> 4.9 · 622 оценки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Бегущая лента -->
+    <div class="ticker" aria-label="Направления: волосы, ногти, брови, ресницы, депиляция, макияж">
+      <div class="ticker__track" aria-hidden="true">
+        <span>Волосы</span><span>Ногти</span><span>Брови</span><span>Ресницы</span><span>Депиляция</span><span>Макияж</span><span>Davines</span><span>Ежедневно 10:00–20:00</span>
+        <span>Волосы</span><span>Ногти</span><span>Брови</span><span>Ресницы</span><span>Депиляция</span><span>Макияж</span><span>Davines</span><span>Ежедневно 10:00–20:00</span>
+      </div>
+    </div>
+
+    <!-- Изюминка: конструктор образа -->
+    <section class="builder" id="obraz" aria-labelledby="builder-title">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2 id="builder-title">Соберите свой образ</h2>
+          <p>Отметьте услуги из разных направлений, и мы сразу покажем примерную стоимость. Список можно отправить салону одним сообщением.</p>
+        </div>
+        <div class="builder__grid">
+          <div class="builder__main">
+            <div class="chips" role="tablist" aria-label="Направления"></div>
+            <div class="cards" id="cards" role="tabpanel"></div>
+          </div>
+          <aside class="summary" aria-live="polite">
+            <h3 class="summary__title">Ваш образ</h3>
+            <p class="summary__empty">Пока ничего не выбрано. Нажмите «+» на карточке услуги.</p>
+            <ul class="summary__list"></ul>
+            <div class="summary__total">
+              <span>Примерно</span>
+              <strong class="js-total">0 ₸</strong>
+            </div>
+            <button class="btn btn--coral btn--wide js-send" type="button" disabled>Отправить салону</button>
+            <button class="link-btn js-reset" type="button" hidden>Очистить выбор</button>
+          </aside>
+        </div>
+      </div>
+      <div class="floatbar" hidden>
+        <div class="floatbar__info">
+          <span class="js-count">0 услуг</span>
+          <strong class="js-total">0 ₸</strong>
+        </div>
+        <button class="btn btn--coral btn--sm js-send" type="button">Отправить</button>
+      </div>
+    </section>
+
+    <!-- Davines -->
+    <section class="davines" id="davines" aria-labelledby="davines-title">
+      <div class="container davines__grid">
+        <figure class="davines__photo reveal">
+          <img src="img/polka.jpg" width="928" height="1152" loading="lazy" alt="Флаконы ухода без надписей на деревянной полке рядом с растением">
+        </figure>
+        <div class="davines__card reveal">
+          <h2 id="davines-title">Работаем с Davines</h2>
+          <p>Уход и осветление волос в салоне делаем на средствах Davines.</p>
+          <ul class="davines__list">
+            <li><span>Уход Davines</span><span class="num">35 000 – 70 000 ₸</span></li>
+            <li><span>Осветление маслом Davines</span><span class="num">от 50 000 ₸</span></li>
+            <li><span>SPA для волос</span><span class="num">25 000 – 60 000 ₸</span></li>
+          </ul>
+          <button class="btn btn--coral js-book" type="button">Записаться на уход</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы: открытки на верёвке (заглушка демо) -->
+    <section class="reviews" id="otzyvy" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__head reveal">
+          <h2 id="reviews-title">Отзывы гостей</h2>
+          <div class="rating">
+            <span class="rating__num">4.9</span>
+            <span class="rating__stars" aria-hidden="true">★★★★★</span>
+            <span class="rating__txt">622 оценки<br>и 479 отзывов</span>
+          </div>
+        </div>
+
+        <div class="line reveal">
+          <svg class="line__rope" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 42 100 8"/></svg>
+          <div class="line__cards">
+            <button class="card-r card-r--white" type="button" style="--r:-4deg; --d:0s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+            <button class="card-r card-r--plum card-r--mid" type="button" style="--r:2deg; --d:-2s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+            <button class="card-r card-r--coral card-r--wide" type="button" style="--r:-2deg; --d:-4s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+          </div>
+        </div>
+        <div class="line line--2 reveal">
+          <svg class="line__rope" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 42 100 8"/></svg>
+          <div class="line__cards">
+            <button class="card-r card-r--lav" type="button" style="--r:3deg; --d:-1s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+            <button class="card-r card-r--white card-r--mid" type="button" style="--r:-3deg; --d:-3s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+            <button class="card-r card-r--plum card-r--wide" type="button" style="--r:4deg; --d:-5s" aria-pressed="false">
+              <span class="card-r__stars" aria-hidden="true">★★★★★</span>
+              <span class="card-r__text">Здесь будет отзыв гостя Capital beauty.</span>
+              <span class="card-r__name">Имя гостя</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал: карта-карточка + три карточки контактов -->
+  <footer class="footer" id="adres">
+    <div class="container">
+      <h2 class="footer__title reveal">Ждём вас на <span class="num">Аль-Фараби</span></h2>
+      <div class="footer__grid">
+        <a class="mapcard reveal" href="https://2gis.kz/astana/firm/70000001058703817" target="_blank" rel="noopener">
+          <svg class="mapcard__map" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g class="mapcard__roads">
+              <path d="M-10 190 L410 120"/>
+              <path d="M-10 70 L410 30" class="thin"/>
+              <path d="M90 -10 L150 270"/>
+              <path d="M300 -10 L250 270" class="thin"/>
+              <path d="M-10 250 L410 205" class="thin"/>
+              <path d="M30 -10 L60 270" class="thin"/>
+            </g>
+            <path class="mapcard__river" d="M-10 235 C 80 215, 160 260, 250 238 S 380 215, 410 232"/>
+          </svg>
+          <span class="mapcard__pin" aria-hidden="true"></span>
+          <span class="mapcard__label">
+            <strong>пр. Аль-Фараби, 11</strong>
+            <span>Открыть на карте ↗</span>
+          </span>
+        </a>
+        <div class="infocards">
+          <div class="infocard reveal">
+            <h3>Адрес</h3>
+            <p>пр. Аль-Фараби, 11, офис 10, 1 этаж</p>
+            <p class="muted">Есиль, Астана</p>
+          </div>
+          <div class="infocard reveal">
+            <h3>Часы</h3>
+            <p>Ежедневно 10:00–20:00</p>
+            <p class="status js-status"></p>
+          </div>
+          <div class="infocard infocard--accent reveal">
+            <h3>Запись</h3>
+            <p>Через WhatsApp салона</p>
+            <button class="btn btn--coral btn--sm js-book" type="button">Записаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a class="logo logo--light" href="#main">Capital beauty</a>
+        <nav class="footer__nav" aria-label="Разделы в подвале">
+          <a href="#obraz">Образ</a>
+          <a href="#davines">Davines</a>
+          <a href="#otzyvy">Отзывы</a>
+        </nav>
+        <p class="footer__demo">Демо-версия сайта · Webstudio Astana</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <h2 id="modal-title">Демо-версия</h2>
+    <p>В полной версии здесь откроется WhatsApp салона.</p>
+    <div class="modal__msg" hidden>
+      <p class="muted">Сообщение салону будет таким:</p>
+      <pre class="js-msg"></pre>
+    </div>
+    <button class="btn btn--plum js-close" type="button">Понятно</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
